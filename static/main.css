@@ -1,0 +1,67 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color:#f4deed;
+}
+h1 {
+    font-weight: 600;
+    font-size: 2.8rem;
+}
+
+.wrapper {
+    display: flex;
+    margin-top: 25px;
+}
+
+.main {
+    min-height: max-content;
+    width: 100%;
+    overflow: hidden;
+    transition: all 0.35s ease-in-out;
+    background-color: #0e2238;
+    color:white;
+    border-radius:6px;
+
+}
+.data
+{
+    height:80vh;
+    width: 100%;
+    overflow: hidden;
+    transition: all 0.35s ease-in-out;
+    background-color: olivedrab;
+}
+.landing-text
+{
+    height: 80vh;
+    width: 50vw;
+    background-color: white;
+    padding-left: 30px;
+    border-radius: 6px 0px 0px 6px;
+}
+.text h2
+{
+    font-weight: 600;
+}
+.text p
+{
+    font-weight: 600;
+    font-size: 1rem;
+}
+.text h1
+{
+    font-weight: 600;
+    font-size: 2.9rem;
+    color:#d36bb4;
+    margin-left: 60px;
+}
+.landing-img
+{   
+    height: 80vh;
+    width: 50vw;
+    background-color:bisque;
+    background-image: url("img/landing.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0px 6px 6px 0px;
+}

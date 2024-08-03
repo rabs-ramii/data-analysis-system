@@ -1,0 +1,147 @@
+<aside id="sidebar">
+  <!-- side navigation bar starts from here -->
+  <div class="d-flex">
+    <button class="toggle-btn" type="button">
+      <i class="lni lni-grid-alt"></i>
+    </button>
+    <div class="sidebar-logo">
+      <a href="{%url 'userhome'%}">Data Analysis</a>
+    </div>
+  </div>
+  <ul class="sidebar-nav">
+    <li class="sidebar-item">
+      <a href="{%url 'userhome'%}" class="sidebar-link">
+        <i class="lni lni-empty-file"></i>
+        <span>Show File</span>
+      </a>
+    </li>
+    <li class="sidebar-item">
+      <a
+        href="#"
+        class="sidebar-link collapsed has-dropdown"
+        data-bs-toggle="collapse"
+        data-bs-target="#file"
+        aria-expanded="false"
+        aria-controls="file"
+      >
+        <i class="lni lni-agenda"></i>
+        <span>file information</span>
+      </a>
+      <ul
+        id="file"
+        class="sidebar-dropdown list-unstyled collapse"
+        data-bs-parent="#sidebar"
+      >
+        <li class="sidebar-item">
+          <a href="{%url 'fileinfo' %}" class="sidebar-link"
+            >1. File information</a
+          >
+        </li>
+        <li class="sidebar-item">
+          <a href="{%url 'filedesc' %}" class="sidebar-link"
+            >2. Describe File</a
+          >
+        </li>
+        <li class="sidebar-item">
+          <a href="{%url 'firstfive' %}" class="sidebar-link"
+            >3. Show first 5 rows</a
+          >
+        </li>
+        <li class="sidebar-item">
+          <a href="{%url 'lastfive' %}" class="sidebar-link"
+            >4. Show last 5 rows</a
+          >
+        </li>
+      </ul>
+    </li>
+    <li class="sidebar-item">
+      <a
+        href="#"
+        class="sidebar-link collapsed has-dropdown"
+        data-bs-toggle="collapse"
+        data-bs-target="#task"
+        aria-expanded="false"
+        aria-controls="task"
+      >
+        <i class="lni lni-pencil-alt"></i>
+        <span>File Operation</span>
+      </a>
+      <ul
+        id="task"
+        class="sidebar-dropdown list-unstyled collapse"
+        data-bs-parent="#sidebar"
+      >
+        <li class="sidebar-item">
+          <a href="{%url 'isnull' %}" class="sidebar-link">1. Check for Null</a>
+        </li>
+        <li class="sidebar-item">
+          <a href="{%url 'nullsum' %}" class="sidebar-link"
+            >2. Null Value Sum</a
+          >
+        </li>
+
+        <li class="sidebar-item">
+          <a href="{%url 'fillnull' %}" class="sidebar-link"
+            >3. Fill all Null Values</a
+          >
+        </li>
+        <li class="sidebar-item">
+          <a href="{%url 'showcolumns' %}" class="sidebar-link"
+            >4. Show all Columns</a
+          >
+        </li>
+        <li class="sidebar-item">
+          <a href="{%url 'statistic' %}" class="sidebar-link"
+            >5. Mean, Median & standard deviation</a
+          >
+        </li>
+      </ul>
+    </li>
+    <li class="sidebar-item">
+      <a
+        href="#"
+        class="sidebar-link collapsed has-dropdown"
+        data-bs-toggle="collapse"
+        data-bs-target="#graph"
+        aria-expanded="false"
+        aria-controls="graph"
+      >
+        <i class="lni lni-bar-chart"></i>
+        <span>Graph Operation</span>
+      </a>
+      <ul
+        id="graph"
+        class="sidebar-dropdown list-unstyled collapse"
+        data-bs-parent="#sidebar"
+      >
+        <li class="sidebar-item">
+          <a href="{%url 'scatterplot' %}" class="sidebar-link"
+            >1. Scatter Plot Graph</a
+          >
+        </li>
+        <li class="sidebar-item">
+          <a href="{%url 'lineplot' %}" class="sidebar-link"
+            >2. Line Plot Graph</a
+          >
+        </li>
+        <li class="sidebar-item">
+          <a href="{%url 'boxplot' %}" class="sidebar-link"
+            >3. Box Plot Graph</a
+          >
+        </li>
+        <li class="sidebar-item">
+          <a href="{%url 'histogram' %}" class="sidebar-link"
+            >4. Histogram Graph</a
+          >
+        </li>
+      </ul>
+    </li>
+  </ul>
+  <div class="sidebar-footer">
+    <a href="{% url 'logout'%}" class="sidebar-link">
+      <i class="lni lni-exit"></i>
+      <span>Logout</span>
+    </a>
+  </div>
+</aside>
+<!-- side navigation bar ends  here -->
